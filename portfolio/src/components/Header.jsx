@@ -1,33 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import log from '../assets/icon/Nicon.jpg';
-import createContactForm from './contact/Contact';
-import ContactForm from './contact/Contact';
 
 const Header = () => {
-  const toggleAbout = () => {
-    let aboutSection = document.getElementById("about");
-    
-        if (aboutSection.style.display === "none") {
-            aboutSection.style.display = "block";
-          } else {
-            aboutSection.style.display = "none";
-          }
-  };
-  
+  const [showNavbar, setShowNavbar] = useState(false);
 
   
+  const toggleNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+
   return (
     <header className="bar">
       <img src={log} alt="Logo" className="logo" />
       
-      <nav className="nav-links">
+      
+      <FontAwesomeIcon icon={faBars} className="bars-icon" onClick={toggleNavbar} />
+      
+     
+      <nav className={`nav-links ${showNavbar ? 'show' : ''}`}>
         <ul>
-          <li><a href="#about" onClick={toggleAbout} className="nav-item">about</a></li>
+          <li><a href="#about" className="nav-item">about</a></li>
           <li><a href="#experience" className="nav-item">experience</a></li>
           <li><a href="#feature-project" className="nav-item">project</a></li> 
-          <li><a href="#contact" className="nav-item" onClick={ContactForm}>contact</a></li>
+          <li><a href="#contact" className="nav-item">contact</a></li>
         </ul>
       </nav>
+      
       
       <span className="resume-button">
         <a className="btn1" href="#"><button>Resume</button></a>

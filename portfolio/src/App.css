@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body {
+    width: 100%;
+}
+
+a, li, button {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    position: sticky;
+    top: 0; 
+    background-color: #fff; 
+    z-index: 1000; 
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 30px; 
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background-color: #ddd;
+    border-radius: 2px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 934px;
+    margin-bottom: 150px 150px;
+    background-color: white;
+}
+.resume-button a{
+  padding-right: 10px;
+  padding: 10px;
+}
+.resume-button a button{
+   
+    padding: 5px;
+  }
+
+  .logo {
+    height: 50px; 
+    width: auto; 
+}
+.container1{
+    height:10vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+ .title{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    
+    text-align-last: center;
+    column-gap: 2 rem;
+ }
+  .title::before{
+   content: " ";
+   height:1px;
+    width: 360px;
+    background-color:#000;
+    display: block; 
+    margin-left: 250px;
+  }
+  .title::after{
+    content: " ";
+    height:1px;
+     width: 360px;
+     background-color:#000;
+     display: block; 
+     margin-right: 145px;
+   }
+
+  .myself
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    height: 100%;
+    background-color: #f2f2f2;
+    width: 70%;
+   }
+.description{
+   margin-top: 49px;
+   }
+
+.description p{
+   
+    margin-bottom: 30px;
+   
+   }
+   
+  .picture{ width: 300px;
+height: 300px;}
+
+.main-content h1{
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-content h4{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+  
+.about_page{
+    background-color: #f2f2f2;
+}
+.fa-angles-down {
+    font-size: 36px; 
+
+  }
+
+
+#contactForm {
+    
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#contactForm h2 {
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="tel"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+  
+.navbar {
+    position: relative;
+    padding: 10px; 
+    border-radius: 2px;
+
+  }
+  .navbar:hover {
+    background-color: #ddd;
+   }
+  
+  .navbar .menu-items {
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    display: none; 
+    background-color: #ddd; 
+    padding: 10px 0; 
+    border-radius: 4px; 
+  }
+  
+  .navbar .menu-items.active {
+    display: block; 
+  }
+  
+  .navbar .menu-items li {
+    padding: 10px; 
+  }
+  
+  .navbar .menu-items li a {
+    color: #000; 
+    text-decoration: none; 
+
+    
+  }
+  
+
+
+  #about{
+   display: none;
+}
+
+
+.hidden {
+    display: none;
+  }
+  
+  

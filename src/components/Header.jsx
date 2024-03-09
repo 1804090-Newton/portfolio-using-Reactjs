@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faIconName } from '@fortawesome/free-solid-svg-icons';
+
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import log from '../assets/icon/Nicon.jpg';
 
